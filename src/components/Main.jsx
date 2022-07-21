@@ -6,8 +6,7 @@ import { Routes ,Route } from 'react-router-native'
 const Main = () => {
   return (
     <View style={{ flex: 1 }}>
-      {/* <AppBar /> */}
-      <hola bb>
+      <AppBar />
       <Routes>
         <Route path='/' exact element={<RepositoryList />} />
         <Route path='/signin' exact element={<Signin />} />
