@@ -52,11 +52,11 @@ const AppBar = () => {
       >
         <AppBarTab to="/">Repositories</AppBarTab>
         <AppBarTab to="/signin">Sign In</AppBarTab>
-        <AppBarTab to="/other">Default</AppBarTab>
-        <AppBarTab to="/other">Default</AppBarTab>
-        <AppBarTab to="/other">Default</AppBarTab>
-        <AppBarTab to="/other">Default</AppBarTab>
-        <AppBarTab to="/other">Default</AppBarTab>
+        <AppBarTab to="/other">Android</AppBarTab>
+        <AppBarTab to="/other">Android</AppBarTab>
+        <AppBarTab to="/other">Android</AppBarTab>
+        <AppBarTab to="/other">Android</AppBarTab>
+        <AppBarTab to="/other">Android</AppBarTab>
       </ScrollView>
     </View>
   )
