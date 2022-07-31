@@ -1,6 +1,11 @@
+/* import { useQuery } from "@apollo/client"
+import { GET_REPOSITORIES } from "../graphql/queries.js" */
 import { useState, useEffect } from "react"
 
 const useRepositories = () => {
+  /* const { data = {}, loading, refetch } = useQuery(GET_REPOSITORIES)
+  const { repositories = null } = data */
+
   const [repositories, setRepositories] = useState(null)
 
   const fetchRepositories = async () => {
@@ -14,10 +19,12 @@ const useRepositories = () => {
   useEffect(() => {
     fetchRepositories()
   }, [])
+
   const repositoriesNodes = repositories
     ? repositories.edges.map((edge) => edge.node)
     : []
 
+  // return { loading, repositories: repositoriesNodes, refetch }
   return { repositories: repositoriesNodes }
 }
 
